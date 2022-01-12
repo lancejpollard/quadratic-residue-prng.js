@@ -18,6 +18,7 @@ while (i < U) {
 ```
 
 - E, A, and O must be primes smaller than U, with E the largest, A the second largest, and O relatively small.
+- E should probably be the largest prime that is less than U.
 - U can be any bigint.
 - All numbers must be bigint.
 - `i` is an incrementing bigint
