@@ -1,5 +1,5 @@
 
-# [Permutation PRNG](https://preshing.com/20121224/how-to-generate-a-sequence-of-unique-random-integers/)
+# [Quadratic Residue PRNG](https://preshing.com/20121224/how-to-generate-a-sequence-of-unique-random-integers/)
 
 ```js
 const permute = require('@lancejpollard/quadratic-residue-prng.js')
