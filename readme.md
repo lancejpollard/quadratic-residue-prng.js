@@ -23,10 +23,12 @@ while (i < U) {
 - All numbers must be bigint.
 - `i` is an incrementing bigint
 
-Go to a site like [curios primes](https://primes.utm.edu/curios/index.php?start=8&stop=9) to select some primes based on your `U` (max). Vary `A` between sequences to create highly different sequences out of the incrementing sequence.
+Select some primes from the `primes` folder based on your `U` (max). Vary `A` between sequences to create highly different sequences out of the incrementing sequence.
 
 So for example, you want to generate 3 sets of pseudo random IDs, you're going to need 3 different sequences (output), but can use the same range of input sequences (0 to max U). Pick a unique `A` for each sequence, but fix E, O, and U. Then when you input `i`, you will get different values for each sequence at index `i`. Sometimes you might want to change U to be a different max, to limit the range (and size) of possible values, as well. But if `U` is constant, to generate different sequences, vary `A` on a per-sequence basis.
 
 The math behind this is pure magic. Whoever figured this out, please explain lol.
 
-This only works for primes E which satisfy E ≡ 3 mod 4.
+This only works for primes E which satisfy E ≡ 3 mod 4 (`prime % 4 === 3`).
+
+Some key primes that are `p % 4 === 3` are in the `primes` folder in this repo.
