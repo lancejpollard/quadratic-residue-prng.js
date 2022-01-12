@@ -1,5 +1,5 @@
 
-const permute = (x, o) => {
+const rotate = (x, o) => {
   if (x >= o) {
     return x
   } else {
@@ -8,6 +8,6 @@ const permute = (x, o) => {
   }
 }
 
-const generate = (v, w, s, x, m) => permute((permute(v, w) + s) % m ^ x, w)
+const permute = (v, w, s, x, m) => rotate((rotate(v, w) + s) % m ^ x, w)
 
-module.exports = generate
+module.exports = permute
