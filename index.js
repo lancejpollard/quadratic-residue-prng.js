@@ -8,6 +8,6 @@ const permute = (x, o) => {
   }
 }
 
-const generate = (v, w, s, x, m) => permute((permute(v, w) + s, w) % m ^ x)
+const generate = (v, w, s, x, m) => permute((permute(v, w) + s) % m ^ x, w)
 
 module.exports = generate
